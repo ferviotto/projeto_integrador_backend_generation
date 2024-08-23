@@ -2,8 +2,12 @@ package com.generation.inticare.model;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 import java.util.List;
@@ -19,8 +23,12 @@ public class UsuarioModel {
     @NotBlank(message = "O nome do usuário é obrigatorio!")
     @Size(max = 255, message = "O texto deve conter até 255 caracteres")
     private String nome;
-
-    @NotBlank(message = "O email do usuário é obrigatorio!")
+    
+    
+    
+    @Schema(example = "email@email.com.br")
+    @NotNull(message = "O Atributo Usuário é Obrigatório!")
+    @Email(message = "O Atributo Usuário deve ser um email válido!")
     @Size(max = 255, message = "O texto deve conter até 255 caracteres")
     @Column(name = "email")
     private String usuario;

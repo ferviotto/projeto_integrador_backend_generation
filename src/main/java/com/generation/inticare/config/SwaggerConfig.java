@@ -19,7 +19,7 @@ public class SwaggerConfig {
         return new OpenAPI()
                 .info(new Info()
                         .title("Projeto IntiCare")
-                        .description("Projeto Intcare - Generation Brasil")
+                        .description("Projeto Inticare - Generation Brasil")
                         .version("v0.0.1")
                         .license(new License()
                                 .name("Generation Brasil")
