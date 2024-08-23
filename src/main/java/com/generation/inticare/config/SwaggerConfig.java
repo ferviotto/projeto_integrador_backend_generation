@@ -30,7 +30,7 @@ public class SwaggerConfig {
                                 .email("inticaregen@gmail.com")))
                 .externalDocs(new ExternalDocumentation()
                         .description("Github")
-                        .url("https://github.com/inticare/IntiCare-ProjetoIntegrador-Generation.git"));
+                        .url("https://github.com/IntiCareGeneration/Projeto-Integrador-Generation-BackEnd-Java.git"));
     }
 
     @Bean
